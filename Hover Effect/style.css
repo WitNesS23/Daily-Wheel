@@ -1,0 +1,258 @@
+html {
+  background-color: #2f3238;
+  font-family: "Raleway", Arial, sans-serif; }
+
+body {
+  margin: 0 auto; }
+
+@font-face {
+  font-family: 'Raleway';
+  src: url("font/raleway-regular-webfont.eot");
+  src: url("font/raleway-regular-webfont.eot?#iefix") format("embedded-opentype"), url("font/raleway-regular-webfont.woff") format("woff"), url("font/raleway-regular-webfont.ttf") format("truetype"), url("font/raleway-regular-webfont.svg#webfont") format("svg"); }
+@font-face {
+  font-family: 'RalewayBold';
+  src: url("font/raleway-extrabold-webfont.eot");
+  src: url("font/raleway-extrabold-webfont.eot?#iefix") format("embedded-opentype"), url("font/raleway-extrabold-webfont.woff") format("woff"), url("font/raleway-extrabold-webfont.ttf") format("truetype"), url("font/raleway-extrabold-webfont.svg#webfont") format("svg"); }
+@font-face {
+  font-family: 'iconfont';
+  src: url("font/iconfont.eot");
+  /* IE9*/
+  src: url("font/iconfont.eot?#iefix") format("embedded-opentype"), url("font/iconfont.woff") format("woff"), url("font/iconfont.ttf") format("truetype"), url("font/iconfont.svg#iconfont") format("svg");
+  /* iOS 4.1- */ }
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+header {
+  text-align: center;
+  line-height: 1.3;
+  margin: 2em 0; }
+  header h1 {
+    color: white;
+    font-size: 4em;
+    font-family: "RalewayBold";
+    letter-spacing: 0.05em;
+    word-spacing: 0.4em;
+    margin-bottom: 0.25em; }
+  header p {
+    color: #74777b;
+    font-size: 2em; }
+
+#main nav {
+  text-align: center; }
+  #main nav ul {
+    display: inline-block; }
+    #main nav ul:after {
+      content: "";
+      display: block;
+      clear: both; }
+    #main nav ul li {
+      float: left; }
+      #main nav ul li a {
+        font-family: "RalewayBold";
+        color: #3498db;
+        display: inline-block;
+        width: 90px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        text-decoration: none; }
+      #main nav ul li .chosen {
+        color: white;
+        background-color: #3c414a; }
+#main > section {
+  margin: 40px 0;
+  display: inline-block; }
+  #main > section:after {
+    display: block;
+    content: "";
+    clear: both; }
+  #main > section h2 {
+    color: #484b54;
+    font-family: "RalewayBold";
+    margin-bottom: 0.5em; }
+  #main > section .hover-area {
+    width: 480px;
+    height: 360px;
+    overflow: hidden;
+    float: left;
+    padding: 2.5em;
+    color: white;
+    position: relative;
+    cursor: pointer;
+    box-sizing: border-box; }
+    #main > section .hover-area:last-child {
+      margin-left: 20px; }
+    #main > section .hover-area img {
+      opacity: 0.8;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      transition: all 1s; }
+    #main > section .hover-area h3 {
+      padding: 0.5em 0;
+      font-size: 2em;
+      font-weight: normal;
+      position: relative;
+      z-index: 1; }
+      #main > section .hover-area h3 strong {
+        font-family: "RalewayBold"; }
+  #main > section .area-Julia ul {
+    margin-top: 1em; }
+    #main > section .area-Julia ul li {
+      display: inline-block;
+      margin: 0 0 0.5em;
+      padding: 0.4em 1em;
+      background-color: white;
+      color: #2f3238;
+      font-weight: 500;
+      position: relative;
+      left: -50%;
+      opacity: 0; }
+      #main > section .area-Julia ul li:first-child {
+        transition: all 0.4s; }
+      #main > section .area-Julia ul li:nth-child(2) {
+        transition: all 0.4s 0.1s; }
+      #main > section .area-Julia ul li:last-child {
+        transition: all 0.4s 0.2s; }
+  #main > section .area-Julia:hover img {
+    opacity: 0.4;
+    transform: scale(1.1); }
+  #main > section .area-Julia:hover li {
+    transform: translate(200px, 0);
+    opacity: 0.9; }
+  #main > section .area-Goliath {
+    background-color: #df4e4e; }
+    #main > section .area-Goliath img {
+      transition: all 0.6s; }
+    #main > section .area-Goliath h3 {
+      position: absolute;
+      bottom: 0.8em;
+      transition: transform 0.6s; }
+    #main > section .area-Goliath p {
+      position: absolute;
+      bottom: -60px;
+      padding: 1em 0;
+      font-family: "RalewayBold";
+      font-size: 1.2em;
+      opacity: 0;
+      transition: all 0.6s; }
+    #main > section .area-Goliath:hover img {
+      transform: translate(0, -80px); }
+    #main > section .area-Goliath:hover p {
+      opacity: 1;
+      transform: translate(0, -70px); }
+    #main > section .area-Goliath:hover h3 {
+      transform: translate(0, -90px); }
+  #main > section .area-Hera {
+    background-color: #303fa9; }
+    #main > section .area-Hera:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      left: 50%;
+      top: 50%;
+      transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, -45deg) scale3d(0, 0, 1);
+      border: 2px solid white;
+      opacity: 0;
+      transition: all 0.5s; }
+    #main > section .area-Hera h3 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0);
+      transition: all 0.5s; }
+    #main > section .area-Hera:hover:after {
+      transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, -45deg) scale3d(1, 1, 1);
+      opacity: 1; }
+    #main > section .area-Hera:hover h3 {
+      transform: translate3d(-50%, -50%, 0) scale3d(0.6, 0.6, 1);
+      opacity: 0; }
+    #main > section .area-Hera:hover li:nth-child(1) {
+      transform: translate3d(50px, 50px, 0);
+      opacity: 1; }
+    #main > section .area-Hera:hover li:nth-child(2) {
+      transform: translate3d(-50px, 50px, 0);
+      opacity: 1; }
+    #main > section .area-Hera:hover li:nth-child(3) {
+      transform: translate3d(50px, -50px, 0);
+      opacity: 1; }
+    #main > section .area-Hera:hover li:nth-child(4) {
+      transform: translate3d(-50px, -50px, 0);
+      opacity: 1; }
+    #main > section .area-Hera ul {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      top: 50%;
+      left: 50%;
+      transform: translate3d(-50px, -50px, 0); }
+      #main > section .area-Hera ul:after {
+        content: "";
+        display: block;
+        clear: both; }
+      #main > section .area-Hera ul li {
+        float: left;
+        position: absolute;
+        opacity: 0;
+        transition: all 0.5s; }
+        #main > section .area-Hera ul li:nth-child(1) {
+          top: -50px;
+          left: -50px; }
+        #main > section .area-Hera ul li:nth-child(2) {
+          top: -50px;
+          left: 100px; }
+        #main > section .area-Hera ul li:nth-child(3) {
+          top: 100px;
+          left: -50px; }
+        #main > section .area-Hera ul li:nth-child(4) {
+          top: 100px;
+          left: 100px; }
+        #main > section .area-Hera ul li a {
+          text-decoration: none;
+          display: inline-block;
+          width: 50px;
+          height: 50px;
+          text-align: center;
+          line-height: 50px; }
+          #main > section .area-Hera ul li a .iconPrivate {
+            font-size: 35px;
+            color: white;
+            opacity: 1; }
+  #main > section .area-Winston {
+    background-color: #162633; }
+  #main > section .area-Selena {
+    background-color: white; }
+    #main > section .area-Selena img {
+      opacity: 0.95;
+      transform: scale3d(1, 1, 1);
+      transition: 1s all; }
+    #main > section .area-Selena h3 {
+      text-align: center;
+      position: relative;
+      transition: 1s all; }
+    #main > section .area-Selena p {
+      position: relative;
+      letter-spacing: 1px;
+      text-align: center;
+      top: -2em;
+      opacity: 0;
+      text-transform: uppercase;
+      transition: 1s all; }
+    #main > section .area-Selena:hover img {
+      transform: scale3d(0.95, 0.95, 1); }
+    #main > section .area-Selena:hover h3 {
+      transform: translate(0, -15px); }
+    #main > section .area-Selena:hover p {
+      opacity: 1; }
+
+@media screen and (min-device-width: 1020px) {
+  body {
+    width: 1000px; } }
