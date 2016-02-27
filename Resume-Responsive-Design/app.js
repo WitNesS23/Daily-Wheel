@@ -20,5 +20,9 @@ function pageStep(direction, step){
 	var _current = $("body").data("index");
 	var _sectionHeight = $("section").height();
 
-	
+	$("main").animate({
+		"top": _sectionHeight * step * direction
+	}, 400 * step, function(){
+
+	});
 }
